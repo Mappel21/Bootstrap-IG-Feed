@@ -27,7 +27,7 @@
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Create a post
                 </button>
-
+                <!--Modal Starts-->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -37,11 +37,11 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-floating">
-                            <textarea class="form-control" id="floatingTextarea"></textarea>
-                            <!-- <label for="floatingTextarea">Comments</label> -->
-                        </div>
-                                    <i class="fas fa-camera"></i>
-                                    <i class="fas fa-map-marker-alt"></i>
+                                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                                    <!-- <label for="floatingTextarea">Comments</label> -->
+                                </div>
+                                <i class="fas fa-camera"></i>
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="modal-footer">
                                 <div class="col">
@@ -52,7 +52,8 @@
                         </div>
                     </div>
                 </div>
-
+                <!--Modal Ends-->
+                <!-- Dropdown Starts -->
             </div>
             <div class="col col-lg-2">
                 <div class="dropdown">
@@ -64,23 +65,26 @@
                         <button class="dropdown-item" type="button">Action</button>
                         <button class="dropdown-item" type="button">Another action</button>
                         <button class="dropdown-item" type="button">Something else here</button>
+                        <hr class="dropdown-divider">
+                        <a class="dropdown-item" href="#">Log Out</a>
                     </div>
                 </div>
-            </div>
-
-
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Action</button>
-                <button class="dropdown-item" type="button">Another action</button>
-                <button class="dropdown-item" type="button">Something else here</button>
             </div>
 
         </div>
     </div>
     <div>
         <div class="row justify-content-center">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#profile"><i class="fas fa-th-large"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#contact"><i class="fas fa-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -90,36 +94,53 @@
                     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                         aria-controls="contact" aria-selected="false"><i class="fas fa-square"></i></a>
                 </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
+            </ul> -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Grid Content -->
+            <div class="tab-pane container active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container-fluid">
 
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="container-fluid">
-                        <div class="row" id="grid-view">
 
-
-                            <div class="col">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                            </div>
-                            <div class="col">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                            </div>
-                            <div class="col">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                                <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
-                            </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                        <div class="col">
+                            <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="container" id="column-view">
+        
+        <!-- Feed Begins -->
+        <div class="tab-pane fade container" id="contact">
+            <div class="container">
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-md-6">
@@ -165,8 +186,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
                                 <div>
                                     <p><strong>23 likes</strong></p>
@@ -193,8 +213,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -222,8 +241,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -251,8 +269,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -280,8 +297,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -309,8 +325,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -338,8 +353,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -367,8 +381,7 @@
                                 </div>
 
                                 <div>
-                                    <img src="https://source.unsplash.com/random"
-                                        class="img-fluid" alt="Responsive">
+                                    <img src="https://source.unsplash.com/random" class="img-fluid" alt="Responsive">
                                 </div>
 
                                 <div>
@@ -385,10 +398,11 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
